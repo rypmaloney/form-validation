@@ -7,11 +7,38 @@
   <meta name="author" content="Ryan Maloney">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id='formContainer'>
+        <div id='card'>
+            <form>
+                <h1>Stay Valid</h1>
+                <label for='email'>Email:</label><br>
+                <input type='text' id='email' name='email' required><br>
+                <label for='country' >Country:</label><br>
+                <input type='text' id='country' name='country' required><br>
+                <label for='zipcode'>Zip Code:</label><br>
+                <input type='text' id='zip' name='zip' required><br>
+                <label for='zipcode'>Zip Code:</label><br>
+                <input type='text' id='zip' name='zip' required><br>
+                <label for='pass'>Password:</label><br>
+                <input type='text' id='pass' name='pass' required><br>
+                <label for='passConfirm'>Reenter Password:</label><br>
+                <input type='text' id='passConfirm' name='passConfirm' required><br>
+
+                <button type="button" id='submitButton'>Submit</button>
+        
+            </form>
+        </div>
 
 
+
+    </div>
     
   <script src="scripts.js"></script>
 </body>
