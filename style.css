@@ -2,7 +2,7 @@ body{
     margin:0;
     padding:0;
     font-family: 'Noto Sans KR', sans-serif;
-    color: rgb(68, 128, 128);
+    color: rgb(94, 114, 114);
 
 }
 
@@ -31,6 +31,7 @@ form{
     margin:auto;
     height: 90%;
 
+
 }
 
 h1{
@@ -41,7 +42,24 @@ h1{
 
 }
 
-input[type='text']{
+#submitButton{
+   margin-left: 110%;
+   margin-top: 15px;
+   border: none;
+   padding: 10px;
+   border-radius: 5px;
+   border: 1px solid white;
+
+
+}
+
+#submitButton:hover{
+   background-color: rgb(166, 184, 166);
+   color: white;
+}
+
+input[type='text'],
+input[type='email']{
     width: 200px;
     margin-bottom: 20px;
     margin-top: 5px;
@@ -52,7 +70,8 @@ input[type='text']{
 
 }
 
-input[type='text']:focus{
+input[type='text']:focus,
+input[type='email']:focus{
     box-shadow: inset 1px 1px 3px 1px rgb(194, 190, 190);
 }
 
@@ -61,3 +80,24 @@ label{
     font-weight: 500;
 }
 
+
+.warning {
+    width: 200px;
+    position:absolute;
+    background-color: white;
+    margin-left: 195px;
+    margin-top: 15px;
+    box-shadow: 2px 2px 15px 2px rgb(199, 197, 192);
+    border-radius: 1px;
+
+
+
+
+
+}
+
+.warning p {
+    font-size: 10px;
+    color:tomato;
+    text-align: center;
+}
