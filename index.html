@@ -16,24 +16,24 @@
 <body>
     <div id='formContainer'>
         <div id='card'>
-            <form>
+            <form id='form'>
                 <h1>Stay Valid</h1>
                 <label for='email'>Email:</label>
                 <div class='warning emailWarn'><p>*Please enter a valid email address</p></div><br>
                 <input type='email' id='email' name='email' required><br>
                 <label for='country' >Country:</label>
-                <div class='warning countryWarn'><p>*Required</p></div><br>
+                <div class='warning countryWarn'><p>*This is a required field</p></div><br>
                 <input type='text' id='country' name='country' required><br>
                 <label for='zipcode'>Zip Code:</label>
-                <div class='warning zipWarn'><p>*Required</p></div><br>
+                <div class='warning zipWarn'><p>*This is a required field</p></div><br>
                 <input type='text' id='zip' name='zip' required><br>
                 <label for='pass'>Password:</label>
-                <div class='warning passWarn'><p>*Required</p></div><br>
+                <div class='warning passWarn'><p>*This is a required field</p></div><br>
                 <input type='text' id='pass' name='pass' required><br>
-                <label for='passConfirm'>Reenter Password:</label>
-                <div class='warning passWarn'><p>*Required</p></div><br>
+                
+                <label for='passConfirm'>Reenter Password:</label><br>
                 <input type='text' id='passConfirm' name='passConfirm' required><br>
-
+                <p id='passWarn'>asfasdfaf</p>
                 <button type="button" id='submitButton'>Submit</button>
         
             </form>

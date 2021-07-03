@@ -103,3 +103,11 @@ label{
     color:tomato;
     text-align: center;
 }
+
+
+#passWarn{
+margin-top: 0;
+    position: absolute;
+    font-size: 9px;
+    color: red;
+}
