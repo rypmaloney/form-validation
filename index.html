@@ -18,22 +18,26 @@
         <div id='card'>
             <form id='form'>
                 <h1>Stay Valid</h1>
-                <label for='email'>Email:</label>
-                <div class='warning emailWarn'><p>*Please enter a valid email address</p></div><br>
+                <label for='email'>Email:</label><br>
                 <input type='email' id='email' name='email' required><br>
-                <label for='country' >Country:</label>
-                <div class='warning countryWarn'><p>*This is a required field</p></div><br>
+                <p class="warning" id='emailWarn'> </p>
+
+                <label for='country' >Country:</label><br>
                 <input type='text' id='country' name='country' required><br>
-                <label for='zipcode'>Zip Code:</label>
-                <div class='warning zipWarn'><p>*This is a required field</p></div><br>
+                <p class="warning" id='countryWarn'> </p>
+
+                <label for='zipcode'>Zip Code:</label><br>
                 <input type='text' id='zip' name='zip' required><br>
-                <label for='pass'>Password:</label>
-                <div class='warning passWarn'><p>*This is a required field</p></div><br>
+                <p class="warning" id='zipWarn'> </p>
+
+                <label for='pass'>Password:</label><br>
                 <input type='text' id='pass' name='pass' required><br>
-                
+                <p class="warning" id='passWarn'> </p>
+
                 <label for='passConfirm'>Reenter Password:</label><br>
                 <input type='text' id='passConfirm' name='passConfirm' required><br>
-                <p id='passWarn'>asfasdfaf</p>
+                <p class="warning" id='passConfirmWarn'> </p>
+
                 <button type="button" id='submitButton'>Submit</button>
         
             </form>

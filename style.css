@@ -61,7 +61,7 @@ h1{
 input[type='text'],
 input[type='email']{
     width: 200px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     margin-top: 5px;
     outline: none;
     border: 1px solid rgb(172, 172, 172);
@@ -82,32 +82,13 @@ label{
 
 
 .warning {
-    display: none;
-    width: 200px;
-    position:absolute;
-    background-color: white;
-    border: 2px solid ghostwhite;
-    margin-left: 192px;
-    margin-top: 15px;
-    box-shadow: 2px 2px 15px 2px rgb(199, 197, 192);
-    border-radius: 0 5px 5px 5px;
-
-
-
-
-
+    margin-top: 0;
+    position: relative;
+    font-size: 9px;
+    color: red;
+    height: 10px;
 }
 
 .warning p {
-    font-size: 10px;
-    color:tomato;
-    text-align: center;
-}
-
-
-#passWarn{
-margin-top: 0;
-    position: absolute;
-    font-size: 9px;
-    color: red;
+    margin: 0;
 }

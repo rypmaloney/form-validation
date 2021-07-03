@@ -6,37 +6,41 @@ passCon.addEventListener('focusout', ()=> checkPassword())
 
 
 function emailValid(){
-    const emailWarn = document.getElementsByClassName('emailWarn')
+    const emailWarn = document.getElementById('emailWarn')
     if(email.validity.typeMismatch){
-       emailWarn[0].style.display ='block'
+       emailWarn.textContent= "Please enter a valid email address."
     } else {
-       emailWarn[0].style.display ='none'
+       emailWarn.textContent= ''
     }
 }
 
 
-/*
-const inputs = document.getElementsByTagName('input')
 
-Array.from(inputs).forEach(element => {
-    element.addEventListener('focusout', (e)=> check(e))})
-
-function check(e){
-    const warner = document.getElementsByClassName(`${e.target.id}Warn`)
-    console.log(warner[0])
-    if(!e.target.checkValidity()){
-       warner[0].style.display = 'block'
-    } else {
-        warner[0].style.display = 'none'
-    }
-}
-*/
 
 function checkPassword(){
     const form = document.getElementById('form');
     if(form.passConfirm.value !== form.pass.value){
-        document.getElementById('passWarn').textContent ='Please enter the same password.'
+        document.getElementById('passConfirmWarn').textContent ='Please enter the same password.'
     }else{
-        document.getElementById('passWarn').textContent =''
+        document.getElementById('passConfirmWarn').textContent =''
+    }
+}
+
+
+
+let submit = document.getElementById('submitButton');
+submitButton.addEventListener('click', ()=> checkAll())
+
+function checkAll(){
+    const inputs = document.getElementsByTagName('input')
+    Array.from(inputs).forEach(element => {check(element)});
+}
+
+function check(element){
+    const warner = document.getElementById(`${element.id}Warn`)
+    if(!element.checkValidity()){
+       warner.textContent = 'This field is required'
+    } else {
+        warner.textContent = ' '
     }
 }
