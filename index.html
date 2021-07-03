@@ -19,17 +19,19 @@
             <form>
                 <h1>Stay Valid</h1>
                 <label for='email'>Email:</label>
-                <div class='warning'><p>*Please enter a valid email address</p></div><br>
+                <div class='warning emailWarn'><p>*Please enter a valid email address</p></div><br>
                 <input type='email' id='email' name='email' required><br>
-                <label for='country' >Country:</label><br>
+                <label for='country' >Country:</label>
+                <div class='warning countryWarn'><p>*Required</p></div><br>
                 <input type='text' id='country' name='country' required><br>
-                <label for='zipcode'>Zip Code:</label><br>
+                <label for='zipcode'>Zip Code:</label>
+                <div class='warning zipWarn'><p>*Required</p></div><br>
                 <input type='text' id='zip' name='zip' required><br>
-                <label for='zipcode'>Zip Code:</label><br>
-                <input type='text' id='zip' name='zip' required><br>
-                <label for='pass'>Password:</label><br>
+                <label for='pass'>Password:</label>
+                <div class='warning passWarn'><p>*Required</p></div><br>
                 <input type='text' id='pass' name='pass' required><br>
-                <label for='passConfirm'>Reenter Password:</label><br>
+                <label for='passConfirm'>Reenter Password:</label>
+                <div class='warning passWarn'><p>*Required</p></div><br>
                 <input type='text' id='passConfirm' name='passConfirm' required><br>
 
                 <button type="button" id='submitButton'>Submit</button>

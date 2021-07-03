@@ -82,13 +82,15 @@ label{
 
 
 .warning {
+    display: none;
     width: 200px;
     position:absolute;
     background-color: white;
-    margin-left: 195px;
+    border: 2px solid ghostwhite;
+    margin-left: 192px;
     margin-top: 15px;
     box-shadow: 2px 2px 15px 2px rgb(199, 197, 192);
-    border-radius: 1px;
+    border-radius: 0 5px 5px 5px;
 
 
 
