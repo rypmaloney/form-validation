@@ -20,7 +20,7 @@ function emailValid(){
 function checkPassword(){
     const form = document.getElementById('form');
     if(form.passConfirm.value !== form.pass.value){
-        document.getElementById('passConfirmWarn').textContent ='Please enter the same password.'
+        document.getElementById('passConfirmWarn').textContent = form.passConfirm.validationMessage
     }else{
         document.getElementById('passConfirmWarn').textContent =''
     }
@@ -39,7 +39,7 @@ function checkAll(){
 function check(element){
     const warner = document.getElementById(`${element.id}Warn`)
     if(!element.checkValidity()){
-       warner.textContent = 'This field is required'
+       warner.textContent =  element.validationMessage
     } else {
         warner.textContent = ' '
     }
